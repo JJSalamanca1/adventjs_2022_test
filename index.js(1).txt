@@ -1,0 +1,26 @@
+const carta = 'bici coche balón _playstation bici coche peluche'
+
+
+function listGifts(carta) {
+  let ListaRegalo = carta.split(" "); 
+  
+  const cajaRegalo {}
+  let regaloActual = ''
+  let conta = 0
+
+  ListaRegalo.map(regalo => {
+    regaloActual = regalo
+    conta = 0
+    ListaRegalo.map(regaloconta => {
+      if (regaloActual  == regaloconta)
+      {
+        conta+=1
+      }
+      cajaRegalo['${regaloActual}'] = conta
+    })
+  })
+  return cajaRegalo
+  
+}
+const regalos = listGifts(carta)
+console.log(regalos)
